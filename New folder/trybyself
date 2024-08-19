@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clickable Image Example</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="menu-item home">Home</a>
+      <a href="experience.html" class="menu-item experience">Experience</a>
+      <a href="projects.html" class="menu-item projects">Projects</a>
+      <a href="contact.html" class="menu-item contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="clickable-image">
+      <a href="https://www.example.com" target="_blank">
+        <img src="image.jpg" alt="Description of Image">
+      </a>
+    </section>
+  </main>
+</body>
+</html>
