@@ -1,0 +1,280 @@
+body {
+  font-family: 'Roboto', sans-serif; /* ใช้ฟอนต์ที่ดูทันสมัย */
+  background-color: hsl(34, 41%, 97%); /* สีครีมอ่อน */
+  color: #8d7966; /* สีเทาน้ำตาล */
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #faf7f3; /* สีครีมอ่อน */
+  padding: 20px;
+  border-bottom: 1px solid #e0dedb; /* ขอบล่างสีเทาอ่อน */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* เพิ่มเงาอ่อนๆ */
+}
+
+h1 {
+  color: #668d75; /* สีเทาน้ำตาล */
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #a55e1b; /* สีเทาน้ำตาล */
+  margin: 15px 30px; /* ปรับ margin ให้เล็กลง */
+  line-height: 1.6;
+}
+
+.imga {
+  text-align: center;
+  margin: 20px 0; /* เพิ่มช่องว่างด้านบนและล่าง */
+}
+
+.imga img {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  border-radius: 50%; /* ทำให้ภาพเป็นวงกลม */
+  border: 5px solid #d4c8b0; /* ขอบสีเบจอ่อน */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* เพิ่มช่องว่างระหว่างลิงก์ */
+  background: linear-gradient(to right, #f5f2ed, #d4c8b0); /* การไล่ระดับสีจากครีมไปเบจ */
+  padding: 10px 0;
+  border-radius: 10px; /* เพิ่มมุมมนให้กับแถบเมนู */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+}
+
+.menu-item {
+  color: #8d7966; /* สีเทาน้ำตาล */
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 25px;
+  transition: background-color 0.3s, transform 0.3s; /* เพิ่มเอฟเฟกต์การเปลี่ยนสีและการขยับ */
+  background-color: #faf7f3; /* พื้นหลังสีครีมอ่อน */
+}
+
+.menu-item:hover {
+  background-color: #d4c8b0; /* สีเบจเมื่อ hover */
+  transform: scale(1.55); /* ขยายขนาดเล็กน้อยเมื่อ hover */
+  box-shadow: 0 4px 6px rgba(66, 49, 49, 0.1); /* เพิ่มเงาเมื่อ hover */
+  border-bottom: 2px solid #8d7966; /* ขอบล่างสีเทาน้ำตาลเมื่อ hover */
+}
+
+
+hr {
+  border: none;
+  border-top: 1px solid #e0dedb; /* เส้นขอบบนสีเทาอ่อน */
+  margin: 20px 0; /* เพิ่มช่องว่างระหว่างส่วนต่างๆ */
+}
+
+.intro h2, .intro h3 {
+  color: #b46f2f; /* สีเทาน้ำตาล */
+  margin-bottom: 10px;
+}
+
+.intro p {
+  color: #8d7966; /* สีเทาน้ำตาล */
+  margin-bottom: 20px;
+}
+
+.content-box {
+  border: 2px solid #ddce9e; /* ขอบสีเบจอ่อน */
+  padding: 20px; /* เพิ่มพื้นที่ภายในกรอบ */
+  border-radius: 10px; /* เพิ่มมุมมน */
+  background-color: #f5f2ed; /* พื้นหลังสีครีม */
+  margin: 20px auto; /* จัดให้อยู่กึ่งกลางด้วย margin auto */
+  max-width: 600px; /* กำหนดความกว้างสูงสุด */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+  font-size: 16px; /* ปรับขนาดฟอนต์ให้ใหญ่ขึ้น */
+  line-height: 1.6; /* เพิ่มความสูงของบรรทัดเพื่อความอ่านง่าย */
+}
+.content-ex {
+  border: 2px solid #ddce9e; /* ขอบสีเบจอ่อน */
+  padding: 20px; /* เพิ่มพื้นที่ภายในกรอบ */
+  border-radius: 10px; /* เพิ่มมุมมน */
+  background-color: #f5f2ed; /* พื้นหลังสีครีม */
+  margin: 20px auto; /* จัดให้อยู่กึ่งกลางด้วย margin auto */
+  max-width: 600px; /* กำหนดความกว้างสูงสุด */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+  font-size: 18px; /* ปรับขนาดฟอนต์ให้ใหญ่ขึ้น */
+  line-height: 1.6; /* เพิ่มความสูงของบรรทัดเพื่อความอ่านง่าย */
+}
+/* Styles for the list */
+ul.custom-list {
+  list-style-type: disc; /* Default bullet point */
+  padding-left: 10px; /* Reduce space between bullet and text */
+  margin: 0; /* Remove default margin */
+}
+
+ul.custom-list li {
+  margin-bottom: 5px; /* Space between list items */
+  font-size: 16px; /* Adjust the font size as needed */
+  position: relative; /* Allows adjustment of bullet position */
+}
+
+ul.custom-list li::before {
+  content: "\2022"; /* Unicode character for bullet */
+  font-size: 26px; /* Size of the bullet */
+  color: #333; /* Color of the bullet */
+  position: absolute; /* Positioning */
+  left: 580px; /* Adjust the position of the bullet */
+  top: 0; /* Aligns the bullet vertically */
+}
+/* Styles for the list */
+ul, ol {
+  padding-left: 175px; /* Space between bullet/number and text */
+  margin: 0; /* Remove default margin */
+}
+
+li {
+  margin-bottom: 12px; /* Space between list items */
+  font-size: 16px; /* Adjust the font size as needed */
+}
+.proj {
+  background-color: #dbc26e; /*สีกรอบหัวข้อhome*/
+  padding: 12px;             
+  margin: 10px auto 20px auto; /* ใช้ auto เพื่อให้อยู่กลาง */
+  width: 20%; /* กำหนดความกว้างให้กรอบเล็กลง */
+  border-radius: 20px;       
+  border: 2px solid #ddd;    
+  box-shadow: 0 5px 8px rgba(148, 24, 24, 0.1);
+}
+
+
+.imgaProject {
+  display: flex;             /* ใช้ flexbox เพื่อเรียงรูปภาพในแนวนอน */
+  justify-content: center;   /* จัดให้รูปภาพอยู่ตรงกลาง */
+  gap: 35px;                 /* ระยะห่างระหว่างรูปภาพ */
+  padding: 20px;             /* ระยะห่างภายในคอนเทนเนอร์ */
+  background-color: #f5f5f5; /* พื้นหลังของคอนเทนเนอร์ */
+  border-radius: 15px;       /* โค้งมุมของคอนเทนเนอร์ */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เงาของคอนเทนเนอร์ */
+  max-width: 80%;            /* จำกัดความกว้างของคอนเทนเนอร์ */
+  margin: 20px auto;         /* จัดให้อยู่กลางหน้าจอ */
+}
+
+.imgaProject img {
+  max-width: 40%;          /* ขนาดสูงสุดของแต่ละรูปภาพ */
+  height: auto;              /* รักษาอัตราส่วนของรูปภาพ */
+  border-radius: 20px;       /* โค้งมุมของรูปภาพ */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงาของรูปภาพ */
+}
+/* ตกแต่งหัวข้อ h2 */
+.imgaexper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 คอลัมน์ */
+  grid-template-rows: repeat(2, auto); /* 2 แถว */
+  gap: 15px; /* ระยะห่างระหว่างรูปภาพ */
+  padding: 20px; /* ระยะห่างภายในคอนเทนเนอร์ */
+  background-color: #f5f5f5; /* พื้นหลังของคอนเทนเนอร์ */
+  border-radius: 15px; /* โค้งมุมของคอนเทนเนอร์ */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เงาของคอนเทนเนอร์ */
+  max-width: 90%; /* จำกัดความกว้างของคอนเทนเนอร์ */
+  margin: 20px auto; /* จัดให้อยู่กลางหน้าจอ */
+}
+
+.imgaexper img {
+  width: 60%; /* ขยายรูปภาพให้เต็มความกว้างของคอลัมน์ */
+  height: auto; /* รักษาอัตราส่วนของรูปภาพ */
+  border-radius: 10px; /* โค้งมุมของรูปภาพ */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงาของรูปภาพ */
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #faf7f3; /* สีครีมอ่อน */
+  color: #8d7966; /* สีเทาน้ำตาล */
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #faf7f3; /* สีครีมอ่อน */
+  padding: 20px;
+  border-bottom: 1px solid #e0dedb; /* ขอบล่างสีเทาอ่อน */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* เงาอ่อนๆ */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: linear-gradient(to right, #f5f2ed, #d4c8b0); /* ไล่ระดับสีจากครีมไปเบจ */
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+  color: #8d7966;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 25px;
+  transition: background-color 0.3s, transform 0.3s;
+  background-color: #faf7f3;
+}
+
+.menu-item:hover {
+  background-color: #d4c8b0;
+  transform: scale(1.1); /* ขยายขนาดเล็กน้อยเมื่อ hover */
+  box-shadow: 0 4px 6px rgba(66, 49, 49, 0.1);
+  border-bottom: 2px solid #8d7966;
+}
+
+main {
+  padding: 20px;
+}
+
+.contact-section {
+  background-color: #ffffff; /* พื้นหลังขาว */
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 600px; /* กำหนดความกว้างสูงสุด */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h1 {
+  color: #b46f2f; /* สีเทาน้ำตาล */
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  color: #8d7966;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.contact-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.menucontact {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Adjust the gap between images */
+  flex-wrap: wrap; /* Allow wrapping to new lines on smaller screens */
+  margin: 20px 0;
+}
+
+.contact-img {
+  width: 100px; /* Set a fixed width for images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact-img:hover {
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+
+
